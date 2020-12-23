@@ -16,7 +16,7 @@ const App = () => {
     axios
       .get("https://swapi.dev/api/people")
       .then((res) => {
-        setSwCharacters(res.data);
+        setSwCharacters(res.data.results);
       })
       .catch((err) => {
         debugger;
