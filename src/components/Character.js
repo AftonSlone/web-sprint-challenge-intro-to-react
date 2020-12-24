@@ -7,6 +7,7 @@ const StyledCharacter = styled.div`
   width: 30%;
   color: gold;
   border-radius: 10px;
+  margin: 2%;
 `;
 
 export default function Character(props) {
@@ -23,14 +24,16 @@ export default function Character(props) {
 
   return (
     <StyledCharacter>
-      <h3>Name: {name}</h3>
-      <h3>Height: {height}</h3>
-      <h3>Mass: {mass}</h3>
-      <h3>Hair Color: {hair_color}</h3>
-      <h3>Skin Color: {skin_color}</h3>
-      <h3>Eye Color: {eye_color}</h3>
-      <h3>Birth Year: {birth_year}</h3>
-      <h3>Gender: {gender}</h3>
+      <div>
+        <h3>Name: {name}</h3>
+        <h3>Height: {height}</h3>
+        <h3>Mass: {mass}</h3>
+        <h3>Hair Color: {hair_color}</h3>
+        <h3>Skin Color: {skin_color}</h3>
+        <h3>Eye Color: {eye_color}</h3>
+        <h3>Birth Year: {birth_year}</h3>
+        <h3>Gender: {gender}</h3>
+      </div>
     </StyledCharacter>
   );
 }
